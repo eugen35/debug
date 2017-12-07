@@ -1,0 +1,34 @@
+{
+  "name": "debug",
+  "version": "0.0.1",
+  "description": "Try debug jest tests for es6-code in WebStorm",
+  "scripts": {
+    "start": "node -r babel-register ./index.js",
+    "test-j": "jest",
+    "test-m": "mocha --require babel-register"
+  },
+  "keywords": [
+    "debug",
+    "es6",
+    "jest"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugen35/debug"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-core": "^6.3.17",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "jest": "^19.0.2",
+    "jest-cli": "*",
+    "mocha": "^4.0.1"
+  }
+}
