@@ -21,13 +21,8 @@
     "bluebird": "^3.5.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.3.17",
-    "babel-core": "^6.3.17",
-    "babel-jest": "^19.0.0",
-    "babel-loader": "^6.2.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
-    "jest": "^19.0.2",
     "jest-cli": "*",
     "mocha": "^4.0.1"
   }
