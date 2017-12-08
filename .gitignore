@@ -8,5 +8,6 @@ package-lock.json
 #yarn
 yarn.lock
 
-#webstorm.idea ВКЛЮЧАЕМ В ПРОЕКТ, Т.К. ЗДЕСЬ КОНФИГИ СКРИПТОВ - как запускать и дебажить es6-код на nodejs
+#webstorm
+.idea
 
