@@ -1,12 +1,9 @@
 /** @module helpers */
 
-//import Promise from "bluebird";
-
-
+import Promise from "bluebird";
 
 export function sum (a,b) {
   const sum = a + b;
-  console.log(sum);
   return sum;
 }
 
@@ -23,3 +20,10 @@ export function sumAsync (a,b,cb) {
     cb(undefined, sum);
   });
 }
+
+/**
+ * @returns {Promise} promise on sum result
+ * @param a
+ * @param b
+ */
+export const promisifiedSumAsync = Promise.promisify(sumAsync);
