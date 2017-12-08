@@ -4,7 +4,9 @@ import {sum} from "../../src/helpers";
 
 
 test('sum',() => {
+  debugger;
   const s = sum(3,4);
+  console.log(s);
   expect(s).toBe(7);
 });
 
