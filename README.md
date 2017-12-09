@@ -2,6 +2,8 @@
 
 # About
 Try debug `jest` tests for `es6-code` in `WebStorm`.
+В текущий момент mocha при асинхронных тестаах дебажится нормально.
+А jest выходит с ошибкой 9 сразу же, ничего не проверяя.
 
 ## Run & Test
 `npm start`
