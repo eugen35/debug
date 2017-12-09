@@ -16,3 +16,6 @@ For distribute Run / Debug configs.
 
 ## Known issues
 See https://eugen35.gitbooks.io/testing/debug/ww.html
+
+## Комментарий к пакетам
+`babel-jest` - нужно, чтобы был. Именно он отвечает за automatically compile JavaScript code using babel.
