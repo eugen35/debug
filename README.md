@@ -10,7 +10,11 @@ Try debug `jest` tests for `es6-code` in `WebStorm`.
 
 jest tests: `npm run test-j` или `npm run test-j:watch`
 
-mocha tests: `npm run test-m`
+mocha tests: `npm run test-m` или `test-m:debug` для возможности дебага в chrome devtools
+
+После запуска скрипта, обеспечивающего возможность дебага в хром девтулс нужно:
+
+Зайти в chrome, в адресной строке вбить chrome://inspect/ и кликнуть Open Dedicated DevTools for Node link => Developer Tools will be opened; и нажать кнопку Resume.
 
 ## Files
 Contains files in /.idea.

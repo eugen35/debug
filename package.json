@@ -6,9 +6,8 @@
     "start": "node -r babel-register ./index.js",
     "test-j": "jest",
     "test-m": "mocha --require babel-register",
-    "test-m1": "mocha --compilers babel-register",
-    "test-m1:repl": "mocha debug --compilers babel-register",
-    "test-m1:debug": "mocha --inspect --debug-brk --compilers babel-register"
+    "test-m:repl": "mocha debug --require babel-register",
+    "test-m:debug": "mocha --inspect-brk --require babel-register"
   },
   "keywords": [
     "debug",
