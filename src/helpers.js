@@ -3,6 +3,7 @@
 import Promise from "bluebird";
 
 export function sum (a,b) {
+  debugger;
   const sum = a + b;
   return sum;
 }
@@ -16,6 +17,7 @@ export function sum (a,b) {
  */
 export function sumAsync (a,b,cb) {
   setImmediate(() => { // Именно за счёт setImmediate(()=>func(args)) получаем асинхронный результат
+    debugger;
     const sum = a + b + 1; // Специально изменил результат !!!!!!!!!!!!
     cb(undefined, sum);
   });

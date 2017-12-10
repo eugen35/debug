@@ -5,6 +5,7 @@ describe("something", function () {
   this.timeout(15000);
 
   it('sum',() => {
+    debugger;
     const s = sum(3,4);
     assert.equal(7, s);
   });

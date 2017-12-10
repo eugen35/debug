@@ -8,6 +8,7 @@ test('sum',() => {
 });
 
 test('callbacked sum', done => {
+  debugger;
   sumAsync(3,4,(err, res) => {
     expect(res).toBe(8);
     done();
