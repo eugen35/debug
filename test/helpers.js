@@ -1,5 +1,5 @@
+import {expect} from 'chai';
 import {sum, sumAsync, promisifiedSumAsync} from "../src/helpers";
-const assert = require('assert');
 
 describe("something", function () {
   this.timeout(15000);
@@ -7,19 +7,19 @@ describe("something", function () {
   it('sum',() => {
     debugger;
     const s = sum(3,4);
-    assert.equal(7, s);
+    expect(s).to.equal(7);
   });
 
   it('sumAsync', done => {
     sumAsync(3,4,(err, res) => {
-      assert.equal(8, res);
+      expect(res).to.equal(8);
       done();
     });
   });
 
   it('promisifiedSumAsync', () => {
     return promisifiedSumAsync(3,4).then(res => {
-      return assert.equal(8, res);
+      return expect(res).to.equal(8);
     });
   });
 
