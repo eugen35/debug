@@ -26,4 +26,5 @@ For distribute Run / Debug configs.
 See https://eugen35.gitbooks.io/testing/debug/ww.html
 
 ## Комментарий к пакетам
-`babel-jest` - нужно, чтобы был. Именно он отвечает за automatically compile JavaScript code using babel.
+`babel-jest` - нужно, чтобы был, если используем jest-тесты ES6-кода. Именно он отвечает за automatically compile JavaScript code using babel.
+`babel-plugin-transform-object-rest-spread` - нужен, чтобы работал spread-оператор при деструктуризации: `let n = { x, y, ...z };` (см. https://babeljs.io/docs/plugins/transform-object-rest-spread/)
