@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {sum, sumAsync, promisifiedSumAsync} from "../src/helpers";
 
-describe("something", function () {
+describe("something", function () { // function() вместо ()=> нужно писать чтобы timeout не ругался. Это неведомый глюк
   this.timeout(15000);
 
   it('sum',() => {
