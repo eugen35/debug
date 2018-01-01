@@ -17,11 +17,15 @@ describe("something", function () { // function() вместо ()=> нужно �
     });
   });
 
+
+  it('promisifiedSumAsync', () => promisifiedSumAsync(3,4).then(res => expect(res).to.equal(8)));
+  // или
   it('promisifiedSumAsync', () => {
     return promisifiedSumAsync(3,4).then(res => {
       return expect(res).to.equal(8);
     });
   });
+
 
 });
 
